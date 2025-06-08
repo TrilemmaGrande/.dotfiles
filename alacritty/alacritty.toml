@@ -47,7 +47,7 @@ opacity = 0.95
 blur = true
 decorations = "full"
 dynamic_title = true
-startup_mode = "Windowed"
+startup_mode = "Maximized"
 
 [window.padding]
 x = 5
