@@ -10,7 +10,8 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use ({ source = "rose-pine/neovim", as = "rose-pine" })
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-
+  use ({ source = "rose-pine/neovim", as = "rose-pine" })
+  use ('theprimeagen/harpoon')
+  use ('tpope/vim-fugitive')
 end)
