@@ -10,11 +10,7 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use ({
-  	"rose-pine/neovim",
-	name = "rose-pine",
-	config = function()
-		vim.cmd("colorscheme rose-pine")
-	end
-   })
+  use ({ source = "rose-pine/neovim", as = "rose-pine" })
+  use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+
 end)
