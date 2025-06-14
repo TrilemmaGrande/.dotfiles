@@ -14,4 +14,11 @@ return require('packer').startup(function(use)
   use ({ source = "rose-pine/neovim", as = "rose-pine" })
   use ('theprimeagen/harpoon')
   use ('tpope/vim-fugitive')
+  use {
+    'neovim/nvim-lspconfig',        
+    requires = {
+      { 'williamboman/mason.nvim' },            
+      { 'williamboman/mason-lspconfig.nvim' }, 
+    }
+  }
 end)
