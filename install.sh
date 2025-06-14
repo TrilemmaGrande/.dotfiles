@@ -4,9 +4,6 @@ set -e
 
 echo "start dotfiles setup..."
 
-echo "create directories..."
-mkdir -p ~/.local/bin
-
 echo "create symlinks..."
 ln -sf ~/.dotfiles/alacritty ~/.config/alacritty
 ln -sf ~/.dotfiles/nvim ~/.config/nvim

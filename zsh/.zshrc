@@ -21,4 +21,6 @@ export EDITOR="nvim"
 alias dots="cd ~/.dotfiles && nvim ."
 alias config="nvim ~/.config"
 alias ll="ls -al"
+alias vim="nvim"
+alias vi="nvim"
 # End of lines added by compinstall
