@@ -8,14 +8,16 @@ echo "create directories..."
 mkdir -p ~/.local/bin
 
 echo "create symlinks..."
-ln -sf ~/dotfiles/alacritty ~/.config/alacritty
-ln -sf ~/dotfiles/nvim ~/.config/nvim
-ln -sf ~/dotfiles/config/rofi ~/.config/rofi
-ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/tmux/.tmux-cht-command ~/.tmux-cht-command
-ln -sf ~/dotfiles/tmux/.tmux-cht-language ~/.tmux-cht-language
+ln -sf ~/.dotfiles/alacritty ~/.config/alacritty
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
+ln -sf ~/.dotfiles/config/rofi ~/.config/rofi
+ln -sf ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sf ~/.dotfiles/tmux/.tmux-cht-command ~/.tmux-cht-command
+ln -sf ~/.dotfiles/tmux/.tmux-cht-language ~/.tmux-cht-language
 
-ln -sf ~/dotfiles/bin/ ~/.local/bin
+ln -sf ~/.dotfiles/bin/ ~/.local/bin
+ln -sf ~/.dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/zsh/.zsh_profile ~/.zsh_profile
 
 echo "create path variables..."
 
