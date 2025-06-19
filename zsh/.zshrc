@@ -20,6 +20,7 @@ export EDITOR="nvim"
 
 alias dots="cd ~/.dotfiles && nvim ."
 alias config="nvim ~/.config"
+alias proj="cd ~/projects/ && nvim ."
 alias ll="ls -al"
 alias vim="nvim"
 alias vi="nvim"
