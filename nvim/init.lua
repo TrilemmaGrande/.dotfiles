@@ -1,1 +1,1 @@
-require("trilemma")
+require("config")
