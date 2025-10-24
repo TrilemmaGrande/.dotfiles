@@ -2,7 +2,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
 export GIT_EDITOR=nvim
 bindkey -s ^f "tmux-sessionizer\n"
-
 addToPathFront() {
     if [[ "$PATH" != *"$1"* ]]; then
         export PATH=$1:$PATH
@@ -11,4 +10,5 @@ addToPathFront() {
 
 addToPathFront $HOME/.local/bin
 addToPathFront $HOME/.local/scripts
+addToPathFront $HOME/.cargo/bin
 

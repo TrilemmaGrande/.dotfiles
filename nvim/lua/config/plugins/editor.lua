@@ -30,7 +30,7 @@ return {
     event = { "BufReadPost", "BufNewFile" },
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "lua", "rust", "toml", "json", "python", "bash" },
+        ensure_installed = { "lua", "rust", "toml", "json", "python", "bash", "ron" },
         highlight = { enable = true },
         indent = { enable = true },
         incremental_selection = { enable = true },
