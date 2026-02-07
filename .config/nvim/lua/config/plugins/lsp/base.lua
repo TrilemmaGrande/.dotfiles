@@ -16,7 +16,8 @@ return {
                     "lua_ls",
                     "html",
                     "emmet_ls",
-                    "ts_ls"
+                    "ts_ls",
+                    "texlab"
                 },
                 automatic_installation = true,
             })
@@ -39,6 +40,11 @@ return {
                         workspace = { checkThirdParty = false },
                     },
                 },
+            }
+            --Latex
+            vim.lsp.config.texlab = {
+                on_attach = lsp.on_attach,
+                capabilities = lsp.capabilities,
             }
 
             -- Python
@@ -73,6 +79,8 @@ return {
             vim.lsp.enable("pyright")
             vim.lsp.enable("html")
             vim.lsp.enable("emmet_ls")
+            vim.lsp.enable("texlab")
+
         end,
     },
 }
